@@ -1,91 +1,49 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <title>Global Educational Aid</title>
-    <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8">
+  <title>Global Education Aid</title>
+  <link rel="stylesheet" href="style.css">
 </head>
-
 <body>
 
-    <header>
-        <h1>Global Educational Aid</h1>
-        <p>A platform to help students find verified international scholarships</p>
-    </header>
+  <header>
+    <h1>Global Education Aid</h1>
+    <p>Helping students find real scholarships worldwide</p>
+  </header>
 
-    <main>
+  <nav>
+    <a href="#">Home</a>
+    <a href="#scholarships">Scholarships</a>
+    <a href="#">About</a>
+  </nav>
 
-        <section class="about">
-            <h2>About the Platform</h2>
-            <p>
-                Global Educational Aid is an independent student-built platform created
-                to help learners identify genuine international scholarships and funding
-                opportunities from official sources.
-            </p>
-        </section>
+  <main>
+    <button id="exploreBtn">Explore Scholarships</button>
 
-        <section class="impact">
-            <h2>Purpose and Impact</h2>
-            <p>
-                Many students struggle to find reliable scholarship information due to
-                misinformation, paid agents, and unverified websites. This platform aims
-                to reduce that confusion by listing only official and trusted programs.
-            </p>
+    <section id="scholarships">
+      <h2>Scholarships</h2>
 
-            <ul>
-                <li>Verified government and university scholarships</li>
-                <li>No paid promotions or third-party agents</li>
-                <li>Focus on merit-based and fully funded opportunities</li>
-            </ul>
+      <div class="scholarship" data-country="USA">
+        <h3>Fulbright Scholarship</h3>
+        <p>Country: USA | Degree: Masters</p>
+        <a href="https://foreign.fulbrightonline.org/" target="_blank">Apply Now</a>
+      </div>
 
-            <p>
-                The platform is designed and maintained independently with the goal of
-                making scholarship discovery simpler and more transparent for students.
-            </p>
-        </section>
+      <div class="scholarship" data-country="UK">
+        <h3>Chevening Scholarship</h3>
+        <p>Country: UK | Degree: Masters</p>
+        <a href="https://www.chevening.org/" target="_blank">Apply Now</a>
+      </div>
 
-        <section class="scholarships">
-            <h2>Featured Scholarships</h2>
+      <div class="scholarship" data-country="Germany">
+        <h3>DAAD Scholarship</h3>
+        <p>Country: Germany | Degree: Masters</p>
+        <a href="https://www.daad.de/en/" target="_blank">Apply Now</a>
+      </div>
+    </section>
+  </main>
 
-            <div class="card">
-                <h3>Fulbright Scholarship (USA)</h3>
-                <p>
-                    A fully funded program supporting international students pursuing
-                    higher education in the United States.
-                </p>
-                <a href="https://foreign.fulbrightonline.org/" target="_blank">
-                    Official Website
-                </a>
-            </div>
-
-            <div class="card">
-                <h3>Chevening Scholarship (United Kingdom)</h3>
-                <p>
-                    A UK government-funded scholarship for students with leadership
-                    potential and strong academic background.
-                </p>
-                <a href="https://www.chevening.org/" target="_blank">
-                    Official Website
-                </a>
-            </div>
-
-            <div class="card">
-                <h3>DAAD Scholarship (Germany)</h3>
-                <p>
-                    A range of funding opportunities for international students planning
-                    to study in Germany.
-                </p>
-                <a href="https://www.daad.de/en/" target="_blank">
-                    Official Website
-                </a>
-            </div>
-        </section>
-
-    </main>
-
-    <footer>
-        <p>© 2025 Global Educational Aid</p>
-    </footer>
-
+  <script src="script.js"></script>
 </body>
 </html>
