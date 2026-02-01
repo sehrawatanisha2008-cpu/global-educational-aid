@@ -62,3 +62,31 @@ button {
   padding: 8px 15px;
   border-radius: 5px;
 }
+/* Search Bar */
+#searchInput {
+  width: 60%;
+  padding: 12px;
+  margin: 20px auto;
+  display: block;
+  font-size: 16px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+}
+
+/* About Section */
+#about {
+  background-color: white;
+  padding: 30px;
+  margin: 40px auto;
+  max-width: 700px;
+  border-radius: 8px;
+}
+
+/* Footer */
+footer {
+  background-color: #0f172a;
+  color: white;
+  text-align: center;
+  padding: 15px;
+  margin-top: 40px;
+}
