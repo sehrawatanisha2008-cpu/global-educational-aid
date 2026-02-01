@@ -1,95 +1,81 @@
+/* ===== COLOR THEME ===== */
+:root {
+  --primary: #1e3a8a;     /* deep blue */
+  --secondary: #0ea5a4;   /* teal */
+  --background: #f8fafc; /* light background */
+  --text-dark: #0f172a;
+}
+
+/* ===== BASE ===== */
 body {
-  margin: 0;
   font-family: Arial, sans-serif;
-  background-color: #f4f6f8;
+  margin: 0;
+  background-color: var(--background);
+  color: var(--text-dark);
 }
 
+/* ===== HEADER ===== */
 header {
-  background-color: #0f172a;
+  background: linear-gradient(135deg, var(--primary), var(--secondary));
   color: white;
-  padding: 30px;
+  padding: 40px 20px;
   text-align: center;
 }
 
+header h1 {
+  margin-bottom: 10px;
+}
+
+/* ===== NAVBAR ===== */
 nav {
-  background-color: #e5e7eb;
-  padding: 10px;
+  background-color: white;
+  padding: 12px;
   text-align: center;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.05);
 }
 
 nav a {
   margin: 0 15px;
+  color: var(--primary);
+  font-weight: 600;
   text-decoration: none;
-  color: #0f172a;
-  font-weight: bold;
 }
 
+/* ===== MAIN ===== */
 main {
-  padding: 40px;
+  padding: 30px 15px;
   text-align: center;
 }
 
-button {
-  padding: 12px 25px;
-  font-size: 16px;
-  background-color: #2563eb;
+/* ===== SEARCH BAR ===== */
+#searchInput {
+  padding: 10px;
+  width: 260px;
+  border-radius: 6px;
+  border: 1px solid #cbd5e1;
+  margin-right: 10px;
+}
+
+/* ===== BUTTONS & LINKS ===== */
+button,
+.scholarship a {
+  background-color: var(--primary);
   color: white;
   border: none;
-  cursor: pointer;
-  border-radius: 5px;
-}
-
-#scholarships {
-  margin-top: 40px;
-}
-
-.scholarship {
-  background-color: white;
-  margin: 20px auto;
-  padding: 20px;
-  max-width: 600px;
-  border-radius: 8px;
-  box-shadow: 0px 2px 5px rgba(0,0,0,0.1);
-  text-align: left;
-}
-
-.scholarship a {
-  display: inline-block;
-  margin-top: 10px;
+  padding: 10px 18px;
+  border-radius: 6px;
   text-decoration: none;
-  background-color: #2563eb;
-  color: white;
-  padding: 8px 15px;
-  border-radius: 5px;
-}
-/* Search Bar */
-#searchInput {
-  width: 60%;
-  padding: 12px;
-  margin: 20px auto;
-  display: block;
-  font-size: 16px;
-  border-radius: 5px;
-  border: 1px solid #ccc;
+  font-weight: 500;
+  cursor: pointer;
 }
 
-/* About Section */
-#about {
-  background-color: white;
-  padding: 30px;
-  margin: 40px auto;
-  max-width: 700px;
-  border-radius: 8px;
+button:hover,
+.scholarship a:hover {
+  background-color: var(--secondary);
+  transition: 0.3s;
 }
 
-/* Footer */
-footer {
-  background-color: #0f172a;
-  color: white;
-  text-align: center;
-  padding: 15px;
-  margin-top: 40px;
-}
+/* ===== SECTIONS (Problem / Impact / Purpose / About) ===== */
 section {
   background: #ffffff;
   margin: 30px auto;
@@ -101,11 +87,36 @@ section {
 
 section h2 {
   margin-bottom: 10px;
-  color: #0f172a;
+  color: var(--primary);
 }
 
 section p {
   font-size: 16px;
   line-height: 1.6;
   color: #334155;
+}
+
+/* ===== SCHOLARSHIP CARDS ===== */
+.scholarship {
+  background-color: #ffffff;
+  margin: 20px auto;
+  padding: 20px;
+  max-width: 700px;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.06);
+  text-align: left;
+}
+
+.scholarship h3 {
+  margin-top: 0;
+  color: var(--primary);
+}
+
+/* ===== FOOTER ===== */
+footer {
+  background-color: var(--primary);
+  color: white;
+  text-align: center;
+  padding: 15px;
+  margin-top: 40px;
 }
